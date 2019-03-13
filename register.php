@@ -1,9 +1,10 @@
-<?php include('LoginFiles/login_register_request.php');?>
+<?php include ('LoginFiles/login_register_request.php'); ?>
 <?php include ('Logs/logAccount.php'); ?>
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>User Login</title>
+	<title>User registration system</title>
 	<link rel="stylesheet" type="text/css" href="Website/style.css">
 	<meta charset="UTF-8" />
 </head>
@@ -11,10 +12,10 @@
 <body>
 
 	<div class="header">
-		<h2>Login</h2>
+		<h2>Register</h2>
 	</div>
 
-	<form action="login.php" method="post">
+	<form method="post" action="register.php" >
 		<?php include('Logs/logErrors.php'); ?>
 		<div class="input-group">
 			<label>Username</label>
@@ -25,16 +26,19 @@
 			<input type=text name="pass">
 		</div>
 		<div class="input-group">
-			<button type=submit name="login" class="btn">Login</button>
+			<label>Confirm Password</label>
+			<input type=text name="pass2">
+		</div>
+		<div class="input-group">
+			<button type=submit name="register" class="btn">Register</button>
 		</div>
 		<p>
-			Not yet a member? <a href="register.php">Sign up</a>
+			Already a member? <a href="login.php">Sign in</a>
 		</p>
 	</form>
 
 
 </body>
-
 
 </html>
 
