@@ -1,9 +1,11 @@
-<?php include('server.php'); ?>
+<?php include('LoginFiles/login_register_request.php');?>
+<?php include ('Logs/logAccount.php'); ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>User Login</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="Website/style.css">
+	<meta charset="UTF-8" />
 </head>
 
 <body>
@@ -13,7 +15,7 @@
 	</div>
 
 	<form action="login.php" method="post">
-		<?php include('errors.php'); ?>
+		<?php include('Logs/logErrors.php'); ?>
 		<div class="input-group">
 			<label>Username</label>
 			<input type=text name="user">
